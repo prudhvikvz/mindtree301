@@ -33,9 +33,7 @@ node {
 	
 def project_terra="terrafrom-code/04-Tomcat-Deploy"
 dir(project_terra) {
-   stage('Prod Deployment on AWS'){
-   sh label: 'terraform', script: 'export AWS_ACCESS_KEY_ID="AKIARLCRT45MOJCWSOSH"'
-   sh label: 'terraform', script: 'export AWS_SECRET_ACCESS_KEY="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"'	   
+   stage('Prod Deployment on AWS'){	   
    sh label: 'terraform', script: '/bin/terraform  init'
    sh label: 'terraform', script: '/bin/terraform  apply -input=false -auto-approve'
    }
