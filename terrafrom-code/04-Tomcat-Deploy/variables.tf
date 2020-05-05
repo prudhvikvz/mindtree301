@@ -1,9 +1,9 @@
 variable "key_name" {
-  default = "mykey-test-1"
+  default = "mykey"
 }
 
 variable "pvt_key" {
-  default = "/root/.ssh/amit-personal-aws.pem"
+  default = "/root/.ssh/mykey.pem"
 }
 
 variable "us-east-zones" {
@@ -11,5 +11,5 @@ variable "us-east-zones" {
 }
 
 variable "sg-id" {
-  default = "sg-0eec038018ea2902d"
+  default = "sg-06174e7de474905a1"
 }
